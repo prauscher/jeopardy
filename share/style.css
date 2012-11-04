@@ -1,0 +1,122 @@
+body {
+	font-family:sans-serif;
+	background-color:black;
+	color:white;
+}
+
+#logo {
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+table.field {
+	width:100%;
+	height:80%;
+}
+table.field td {
+	width:15%;
+	height:15%;
+}
+
+table.field td {
+	text-align:center;
+	font-size:20pt;
+	font-weight:bold;
+}
+
+table.field .label th {
+	font-size:16pt;
+	height:20px;
+}
+
+table.field td.cat1 {
+	background-color:#c460be;
+}
+table.field td.cat2 {
+	background-color:#ddaa41;
+}
+table.field td.cat3 {
+	background-color:#49dd41;
+}
+table.field td.cat4 {
+	background-color:#41a3a1;
+}
+table.field td.cat5 {
+	background-color:#464ece;
+}
+
+table.field .used {
+/*	border:2px solid red; */
+	color:black;
+}
+table.field .used.cat1 {
+	background-color:#aaaaaa;
+}
+table.field .used.cat2 {
+	background-color:#aaaaaa;
+}
+table.field .used.cat3 {
+	background-color:#aaaaaa;
+}
+table.field .used.cat4 {
+	background-color:#aaaaaa;
+}
+table.field .used.cat5 {
+	background-color:#aaaaaa;
+}
+
+/* Lightbox background */
+#lightbox-hover {
+ display:none;
+ background:#000000;
+ opacity:0.9;
+ filter:alpha(opacity=90);
+ position:absolute;
+ top:0px;
+ left:0px;
+ min-width:100%;
+ min-height:100%;
+ z-index:1000;
+}
+/* Lightbox panel with some content */
+#lightbox-panel {
+ display:none;
+ position:fixed;
+ top:10%;
+ height:80%;
+ left:10%;
+ width:80%;
+ background:#FFFFFF;
+ color:#000000;
+ padding:10px 15px 10px 15px;
+ border:2px solid #CCCCCC;
+ z-index:1001;
+}
+#answer {
+	font-size:3em;
+}
+
+.stats {
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.stats .nick {
+	width:200px;
+	clear:left;
+	float:left;
+	display:block;
+	font-size:1.5em;
+}
+.stats .punkte {
+	text-align:right;
+	width:100px;
+	float:left;
+	display:block;
+	font-size:1.5em;
+}
+
+#counter {
+	font-size:1.5em;
+}

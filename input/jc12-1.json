@@ -1,0 +1,50 @@
+{"categories":
+	["Internetexperten", "TV-Serien", "Parteipolitik", "Energiepolitik", "Diverses"],
+ "questions":
+	[ [
+		{"question":"Lolcat / Icanhaz / ...","answer":"<img src=/images/cheeseburger.jpg />"},
+		{"question":"Wer ist \"peer\"?","answer":"Irgendwann schließe ich seine Verbindung"},
+		{"answer":"<img src=/images/goodlauer.jpg />","question":"Goodlauer"},
+		{"question":"Welches Gemüse ist im Original-Loituma zu sehen?","answer":"Lauch / Porree"},
+		{"question":"Wie lautet die Regel 33 des Internets?","answer":"Lurk more - Its never enough!"}
+	],[
+		{"question":"Futurama","answer":"Fine. I'll go build my own lunar lander. With blackjack. And hookers. In fact, forget about the lunar lander and the blackjack!"},
+		{"question":"The Simpsons","answer":"The Internet King? I wonder if he could provide faster nudity ..."},
+		{"question":"Spongebob Squarepants","answer":"Lets get naked!"},
+		{"question":"The Big Bang Theory","answer":"I do not have to urinate. I am the master of my own bladder...... drat."},
+		{"question":"IT Crowd","answer":"0118 999 881 999 119 7253"}
+	],[
+		{"answer":"Alle ernstzunehmenden Parteien, also Union, SPD, FDP und Grüne, sind für das Ziel \"Arbeit für alle\".",
+		 "question":"Angela Merkel, CDU (Interview der Faz.net zum Thema Wahlkampf 2009, 21.08.2009)"},
+		{"answer":"Jamaika ist keine Option. Können Sie sich Angela Merkel oder Edmund Stoiber mit Dreadlocks vorstellen?",
+		 "question":"Joschka Fischer, GRÜNE (zur möglichen \"Jamaika\"-Koalition nach den Bundestagswahlen, 19. September 2005)"},
+		{"answer":"Halten Sie die verrottete und verschuldete SPD (lange Pause) NPD aus dem Landtag heraus.",
+		 "question":"Frank-Walter Steinmeier, SPD (Gesagt beim Wahlkampfabschluß der sächsischen SPD in Dresden, 30.08.09)"},
+		{"answer":"Armut und soziale Ausgrenzung sind nicht über uns gekommen, sie sind das Ergebnis der Politik von Gerhard Schröder.",
+		 "question":"Ottmar Schreiner, SPD (Gegenüber dem Tagesspiegel am Sonntag vom 15.10.2006)"},
+		{"answer":"Die arbeitgebernahen Verbände lobbyieren in der Regel über die FDP und die Union und insbesondere die Union ist da sehr anfällig.",
+		 "question":"Karl Lauterbach, SPD (Gegenüber planet-interview.de am 04.05.2009)"}
+	],[
+		{"answer":"Energie ist ein öffentliches Gut und sollte auch allen zugänglich sein.",
+		 "question":"Hans-Kurt Hill, LINKE (Gegenüber der Jungen Welt am 02.11.2007)"},
+		{"answer":"Ein Atomkraftwerk ist schließlich keine Pommesbude.",
+		 "question":"Ursula Hamann, GRÜNE (Über die falsch montierten Dübel im Atomkraftwerk Biblis, 25.10.2006)"},
+		{"answer":"Wenn wir unsere Energielieferungen danach aussuchen würden, ob in den Lieferstaaten die Menschenrechte vollständig verwirklicht sind, dann dürften wir unsere Energie nur aus Norwegen beziehen.",
+		 "question":"Günter Verheugen, EU-Industriekommissar, SPD (Welt Online 19.10.2006)"},
+		{"answer":"Statt der Kohle sollten wir Kinder fördern.",
+		 "question":"Guido Westerwelle, FDP (Gegenüber der Welt am 24.01.2005)"},
+		{"answer":"Kernkraft ist für die CDU Öko-Energie.",
+		 "question":"Ronald Pofalla, CDU (CDU-Vorstandssitzung zur Umweltpolitik)"}
+	],[
+		{"answer":"Mit Verlaub, Herr Präsident, Sie sind ein Arschloch",
+		 "question":"Joschka Fischer, GRÜNE (Zwischenruf an Bundestagsvizepräsident Richard Stücklen am 18.10.1984)"},
+		{"answer":"Wenn wir jeden, der bei uns mal Blödsinn erzählt oder uns Probleme macht, ausschließen, dann wird's auf die Dauer einsam.",
+		 "question":"Sigmar Gabriel, SPD (Gegenüber der dpa am 31.07.2008)"},
+		{"answer":"Ich werde unfreundlich, wenn mir Verfassungsbruch vorgeworfen wird.",
+		 "question":"Wolfgang Schäuble, CDU (Gegenüber der Frankfurter Rundschau am 29.06.2007)"},
+		{"answer":"Das ist eine klassische journalistische Behauptung. Sie ist zwar richtig, aber sie ist nicht die Wahrheit.",
+		 "question":"Helmut Kohl, CDU (Gegenüber den ARD-Tagesthemen am 22.02.1994)"},
+		{"answer":"Kreuze raus aus dem Klassenzimmer, Imame weihen öffentliche Gebäude ein, japanische Autos auf den Straßen – das ist nicht unser Bayern.",
+		 "question":"Horst Seehofer, CSU (CSU-Parteitag, 30.10.2010)"}
+	] ]
+}

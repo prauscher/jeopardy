@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>JC11 Jeopardy</title>
+<link rel="stylesheet" href="/style.css" type="text/css" />
+<script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript" src="/jquery.progressbar.js"></script>
+<script type="text/javascript">
+<!--
+
+var admin = (window.location.search.substring(1,6) == "admin");
+var stateid = 0;
+var infodata = new Array();
+var activeTeam = 0;
+var activeCat = 0;
+var activeLvl = 0;
+var colors = new Array("#ff0000", "#0000ff", "#00bb00");
+var counter = 0;
+var timerActive = 0;
+setInterval("doTimer()", 100);
+
+$(document).ready(function() {
+	$("#welcome").show();
+	$("#field").hide();
+	var currentview = "welcome";
+	
+	setInterval( function () {
+		$.post("/refresh", {'stateid': parseInt(stateid)}, function (data) {
+			for (var e=0;e<data.events.length;e++) {
+				stateid = data.events[e].eventid;
+				// switch ... case does not work. stupid js
+				if (data.events[e].type == "init") {
+					infodata = data.events[e].data;
+					for (var c=0;c<5;c++) {
+						$("#cat" + (c+1)).text(infodata.categories[c]);
+					}
+				} else if (data.events[e].type == "setplayer") {
+					for (var p=0;p<3;p++) {
+						if (data.events[e].nick[p] == "-") {
+							$("#player" + p).hide();
+							$("#buzzer" + p).hide();
+						} else {
+							$("#player" + p).show();
+							$("#buzzer" + p).show();
+						}
+						$("#player" + p + "-nick").text(data.events[e].nick[p]);
+						$("#player" + p + "-punkte").text(data.events[e].punkte[p]);
+					}					
+				} else if (data.events[e].type == "alert") {
+					alert(data.events[e].text);
+				} else if (data.events[e].type == "switchview") {
+					$("#" + currentview).hide();
+					currentview = data.events[e].view;
+					$("#" + currentview).show();
+				} else if (data.events[e].type == "select") {
+					var field = String(data.events[e].field).split("|");
+					activeCat = parseInt(field[0]);
+					activeLvl = parseInt(field[1]);
+					$("#answer").html(infodata.questions[activeCat-1][activeLvl-1].answer);
+					if (admin) {
+						$("#question").html(infodata.questions[activeCat-1][activeLvl-1].question);
+					}
+					counter = Math.round(new Date().getTime()/1000 - data.events[e].timestamp);
+					timerActive = 1
+					$("#lightbox-hover").css("background-color", "#000000");
+					$("#lightbox-hover, #lightbox-panel").fadeIn(500);
+				} else if (data.events[e].type == "buzzer") {
+					timerActive = 0;
+					if (activeTeam == 0) {
+						activeTeam = data.events[e].buzzer;
+						$("#lightbox-hover").css("background-color", colors[data.events[e].buzzer - 1]);
+					}
+				} else if (data.events[e].type == "success") {
+					if (activeTeam != 0) {
+						$("#field" + activeCat + "-" + activeLvl).addClass("used solved" + (activeTeam-1));
+						$("#player" + (activeTeam-1) + "-punkte").text(parseInt($("#player" + (activeTeam-1) + "-punkte").text()) + parseInt($("#field" + activeCat + "-" + activeLvl).text()) );
+						activeTeam = 0;
+					}
+					$("#lightbox-hover, #lightbox-panel").fadeOut(500);
+				} else if (data.events[e].type == "failed") {
+					timerActive = 1;
+					activeTeam = 0;
+					$("#lightbox-hover").css("background-color", "#000000");
+				} else if (data.events[e].type == "exit") {
+					activeTeam = 0;
+					$("#field" + activeCat + "-" + activeLvl).addClass("used solved" + (activeTeam-1));
+					$("#lightbox-hover, #lightbox-panel").fadeOut(500);
+				} else if (data.events[e].type == "clear") {
+					for (var cat=1;cat <= 5;cat++) {
+						for (var lvl=1;lvl <= 5;lvl++) {
+							$("#field" + cat + "-" + lvl).removeClass("used");
+							for (var usr=0;usr < 3;usr++) {
+								$("#field" + cat + "-" + lvl).removeClass("solved" + usr);
+							}
+						}
+					}
+				} else {
+					alert("o.O");
+				}
+			}
+		});
+	}, 500);
+});
+
+function doTimer() {
+	if (timerActive) {
+		counter += 0.1;
+	}
+	time = "";
+	var sec = Math.floor(counter);
+	var min = 0;
+	if (sec >= 60) {
+		min = Math.floor(sec/60);
+		sec = sec - min*60;
+	}
+	if (sec < 10) {
+		sec = "0" + sec;
+	}
+	$("#counter").text(min + ":" + sec);
+}
+
+-->
+</script>
+</head>
+<body>
+<div id="lightbox-panel">
+<div id="answer">&nbsp;</div>
+<div id="question">&nbsp;</div>
+<img src="buzzer1.png" id="buzzer0" />
+<img src="buzzer2.png" id="buzzer1" />
+<img src="buzzer3.png" id="buzzer2" />
+<div id="counter">&nbsp;</div>
+</div>
+<div id="lightbox-hover">&nbsp;</div>
+<div id="welcome">&nbsp;</div>
+<div id="field">
+<table class="field">
+<tr class="label">
+ <th class="cat1" id="cat1">&nbsp;</th>
+ <th class="cat2" id="cat2">&nbsp;</th>
+ <th class="cat3" id="cat3">&nbsp;</th>
+ <th class="cat4" id="cat4">&nbsp;</th>
+ <th class="cat5" id="cat5">&nbsp;</th>
+</tr>
+<tr class="lvl5">
+ <td class="cat1" id="field1-5">500</td>
+ <td class="cat2" id="field2-5">500</td>
+ <td class="cat3" id="field3-5">500</td>
+ <td class="cat4" id="field4-5">500</td>
+ <td class="cat5" id="field5-5">500</td>
+</tr>
+<tr class="lvl4">
+ <td class="cat1" id="field1-4">400</td>
+ <td class="cat2" id="field2-4">400</td>
+ <td class="cat3" id="field3-4">400</td>
+ <td class="cat4" id="field4-4">400</td>
+ <td class="cat5" id="field5-4">400</td>
+</tr>
+<tr class="lvl3">
+ <td class="cat1" id="field1-3">300</td>
+ <td class="cat2" id="field2-3">300</td>
+ <td class="cat3" id="field3-3">300</td>
+ <td class="cat4" id="field4-3">300</td>
+ <td class="cat5" id="field5-3">300</td>
+</tr>
+<tr class="lvl2">
+ <td class="cat1" id="field1-2">200</td>
+ <td class="cat2" id="field2-2">200</td>
+ <td class="cat3" id="field3-2">200</td>
+ <td class="cat4" id="field4-2">200</td>
+ <td class="cat5" id="field5-2">200</td>
+</tr>
+<tr class="lvl1">
+ <td class="cat1" id="field1-1">100</td>
+ <td class="cat2" id="field2-1">100</td>
+ <td class="cat3" id="field3-1">100</td>
+ <td class="cat4" id="field4-1">100</td>
+ <td class="cat5" id="field5-1">100</td>
+</tr>
+</table>
+ <div id="player0" class="stats">
+  <span id="player0-nick" class="nick"></span>
+  <span id="player0-punkte" class="punkte"></span>
+ </div>
+ <div id="player1" class="stats">
+  <span id="player1-nick" class="nick"></span>
+  <span id="player1-punkte" class="punkte"></span>
+ </div>
+ <div id="player2" class="stats">
+  <span id="player2-nick" class="nick"></span>
+  <span id="player2-punkte" class="punkte"></span>
+ </div>
+</div>
+<img src="logo.png" id="logo" />
+</body>
+</html>

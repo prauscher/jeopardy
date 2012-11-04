@@ -1,0 +1,55 @@
+{"categories":
+	["Gesetzgebung","Sicherheitspolitik","Kanzlersprüche","Netzpolitik","Diverses"],
+ "questions":
+	[ [
+		{"question":"Art. 21 Satz 2 der Hessischen Verfassung","answer":"Bei besonders schweren Verbrechen kann [ein Straftäter] zum Tode verurteilt werden."},
+		{"question":"Gesetz über die soziale Wohnraumförderung","answer":"\"Wohnungsbau ist das Schaffen von Wohnraum durch Baumaßnahmen, durch die Wohnraum in einem selbstständigen Gebäude geschaffen wird.\""},
+		{"question":"Eisenbahnkreuzungsgesetz (§1 Abs. 2)","answer":"\"Kreuzungen sind entweder höhengleich oder nicht höhengleich.\""},
+		{"question":"Verletzung von Privatgeheimnissen","answer":"§ 203 StGB"},
+		{"question":"§ 202c StGB","answer":"\"Wer eine Straftat [...] vorbereitet, indem er [...] Computerprogramme [...] herstellt, sich oder einem anderen verschafft, verkauft, [...] wird bestraft.\""}
+	],[
+		{"answer":"Niemand hat die Absicht eine Mauer zu errichten!",
+		 "question":"Walter Ulbricht, SED (Pressekonferenz am 15.06.1961)"},
+		{"answer":"Ein Staat, in dem alle verdächtig sind, ist selbst verdächtig.",
+		 "question":"Burkhard Hirsch, FDP (Thema Vorratsdatenspeicherung, heise online, 2. Januar 2007)"},
+		{"answer":"Am Tatort muß dann auch schon mal die Pressefreiheit zurückstecken.",
+		 "question":"Wilhelm Kewenig, CDU (Eintrag für den 29.09.1988)"},
+		{"answer":"Videoüberwachung macht nur Sinn, wenn sofort Hilfe zur Stelle ist. Sonst ist das nur der Versuch, Personal zu sparen und sich die Arbeit leichter zu machen, es ist die Vortäuschung falscher Sicherheit.",
+		 "question":"Brigitte Zypries, SPD (Süddeutsche Zeitung, 14.09.2009)"},
+		{"answer":"Ich bin ein freier Mensch und werde jetzt von meinen Freiheitsrechten Gebrauch machen – und zwar ausgiebig –, natürlich nur in dem Rahmen, den Otto Schily mir noch zur Verfügung stellt ...",
+		 "question":"Wolfgang Clement, SPD (heise.de 28.10.2005)"}
+	],[
+		{"answer":"Willen braucht man. Und Zigaretten.",
+		 "question":"Helmut Schmidt, SPD (ARD, 4. Juli 2007, 22.45 Uhr)"},
+		{"answer":"Wir wollen mehr Demokratie wagen.",
+		 "question":"Willy Brandt, SPD (Aus der Regierungserklärung 1969)"},
+		{"answer":"Hol' mir mal 'ne Flasche Bier, sonst streik ich hier, und schreibe nicht weiter!",
+		 "question":"Gerhard Schröder, SPD (Zu einem Spiegel-TV Team auf der Rundreise durch die neuen Länder im Jahr 2000)"},
+		{"answer":"Wir leben alle unter dem gleichen Himmel, aber wir haben nicht alle den gleichen Horizont.",
+		 "question":"Konrad Adenauer, CDU"},
+		{"answer":"Am wichtigsten ist, was hinten rauskommt.",
+		 "question":"Helmut Kohl, CDU (Bundespressekonferenz, 31.08.1984)"}
+	],[
+		{"answer":"Browser - Was sind denn jetzt nochmal Browser?",
+		 "question":"Brigitte Zypries, SPD (Im ARD Morgenmagazin vom 28.06.2007)"},
+		{"answer":"Das macht mich schon sehr betroffen, wenn pauschal der Eindruck entstehen sollte, dass es Menschen gibt, die sich gegen die Sperrung von kinderpornografischen Inhalten sträuben. Das ist nun wirklich einer der wichtigsten Vorhaben in vielerlei Hinsicht.",
+		 "question":"Karl-Theodor zu Guttenberg, CSU (Gegenüber der Tagesschau am 08.05.2009)"},
+		{"answer":"Internetsperren sind verfassungsrechtlich unzulässig, handwerklich mangelhaft und weitgehend nutzlos.",
+		 "question":"Jörg Wunderlich, LINKE (Pressemitteilung vom 27.05.2009)"},
+		{"answer":"Mißbrauchsbekämpfung bedeutet jedoch nicht die lückenlose Datenkontrolle im Internet.",
+		 "question":"Jürgen Rüttgers, CDU (Gegenüber der Frankfurter Rundschau 1996)"},
+		{"answer":"Das Blockieren oder Filtern bestimmter Internet-Inhalte ist für die Europäische Union völlig inakzeptabel.",
+		 "question":"Viviane Reding, EU-Medienkommissarin (Schrieb ins Stammbuch der chinesischen Regierung im Juni 2009)"}
+	],[
+		{"answer":"seltsam, dass Frauen sich nicht für Bürgerrechte interessieren",
+		 "question":"Jens Seipenbusch, PIRATEN (Gegenüber der Zeit am 06.07.2009)"},
+		{"answer":"Wir mussten uns mit der Oder-Neiße-Grenze abfinden.",
+		 "question":"Wolfgang Schäuble, CDU (Auf dem Deutschlandtreffen der Schlesier unter dem Motto \"In Verantwortung für Schlesien\", 8./9. Juli 1995 in Nürnberg)"},
+		{"answer":"Wir brauchen weniger Ausländer, die uns ausnützen, und mehr, die uns nützen.",
+		 "question":"Günther Beckstein, CSU (Gegenüber dem Focus am 10.06.2000)"},
+		{"answer":"Ich hoffe, dass es meinem Land nie so dreckig geht, dass es auf Leute wie mich zurückgreifen muss.",
+		 "question":"Michael Glos, CSU (In der Zeit, 19.08.2005)"},
+		{"answer":"Sie unterstellen einem abwechselnd, man wolle die Verfassung abschaffen und man sei geisteskrank.",
+		 "question":"Wolfgang Schäuble, CDU (Bundestagsdebatte vom 20.09.2007)"}
+	] ]
+}
